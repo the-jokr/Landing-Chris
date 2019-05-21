@@ -27,14 +27,14 @@ body {
         }
 
         .nav-title {
-            font-size: 2.5rem;
+            img {
+                height: 100px;
+                width : auto;
 
-            @media(max-width: 800px) {
-                font-size: 3rem;
-            }
-
-            @media(max-width: 500px){
-                font-size: 2.5rem;
+                @media(max-width: 500px) {
+                    height: 75px;
+                    width : auto;
+                }
             }
 
         }
@@ -49,7 +49,7 @@ body {
                 padding      : 10px 35px;
                 color        : black;
 
-                @media(max-width: 500px){
+                @media(max-width: 500px) {
                     padding: 5px 25px;
                 }
             }
@@ -61,7 +61,7 @@ body {
                 color           : white;
                 background-color: black;
 
-                @media(max-width: 500px){
+                @media(max-width: 500px) {
                     padding: 5px 25px;
                 }
 
@@ -71,7 +71,6 @@ body {
 
 
     }
-
 
     .top {
         display        : flex;
@@ -137,8 +136,8 @@ body {
                 max-width: 50%;
             }
 
-            @media(max-width: 500px){
-                top: 25%;
+            @media(max-width: 500px) {
+                top      : 25%;
                 max-width: 85%;
             }
 
@@ -157,9 +156,9 @@ body {
                 @media(max-width: 800px) {
                     font-size: 1.2rem;
                 }
-                
-                @media(max-width: 500px){
-                    font-size: 1.5rem;
+
+                @media(max-width: 500px) {
+                    font-size  : 1.5rem;
                     line-height: 30px;
                 }
 
@@ -205,7 +204,7 @@ body {
             flex-flow: row;
             flex-wrap: wrap;
 
-            @media(max-width:800px){
+            @media(max-width:800px) {
                 justify-content: center;
             }
 
@@ -218,8 +217,9 @@ body {
                 border-radius  : 4px;
                 justify-content: space-between;
                 margin         : 10px;
-                @media(max-width:800px){
-                    width: 80%;
+
+                @media(max-width:800px) {
+                    width : 80%;
                     height: 300px;
                 }
 
@@ -232,7 +232,8 @@ body {
                     margin    : 10px;
                     align-self: center;
                     font-size : 1.5rem;
-                    @media(max-width: 800px){
+
+                    @media(max-width: 800px) {
                         font-size: 3rem;
                     }
                 }
@@ -252,7 +253,8 @@ body {
 
                         a {
                             color: black;
-                            @media(max-width: 800px){
+
+                            @media(max-width: 800px) {
                                 font-size: 1.5rem;
                             }
                         }
@@ -281,18 +283,18 @@ body {
             top      : 20%;
             display  : flex;
             flex-flow: row;
-            max-width: 65%;
+            max-width: 85%;
             height   : 400px;
 
-            @media(max-width: 800px){
+            @media(max-width: 800px) {
                 flex-flow: column-reverse;
-                height: auto;
-                top: 15%;
+                height   : auto;
+                top      : 15%;
                 max-width: 85%;
             }
 
-            @media(max-width:500px){
-                top: 8%;
+            @media(max-width:500px) {
+                top: 12%;
             }
         }
 
@@ -307,12 +309,12 @@ body {
             padding        : 15px;
             margin         : 20px;
 
-            @media(max-width:800px){
-                width: 90%;
+            @media(max-width:800px) {
+                width : 90%;
                 height: 350px;
             }
 
-            @media(max-width:500px){
+            @media(max-width:500px) {
                 margin: 0px;
             }
 
@@ -373,22 +375,28 @@ body {
             padding        : 15px;
             margin         : 20px;
 
-            @media(max-width:800px){
+            @media(max-width:800px) {
                 width: 90%;
             }
-            @media(max-width:500px){
-                margin: 0px;
+
+            @media(max-width:500px) {
+                margin   : 0px;
                 font-size: 1.3rem;
             }
 
             &-title {
                 font-size: 3.5rem;
                 width    : 90%;
+                @media(max-width: 500px){
+                    font-size: 2.5rem;
+                    
+                }
             }
 
             &-directions {
                 font-size: 1.2rem;
-                @media(max-width:800px){
+
+                @media(max-width:800px) {
                     font-size: 1.4rem;
                 }
             }

@@ -18,17 +18,14 @@ body {
   margin-top: 5px;
   color: black;
 }
-.container .nav-bar .nav-title {
-  font-size: 2.5rem;
-}
-@media (max-width: 800px) {
-  .container .nav-bar .nav-title {
-    font-size: 3rem;
-  }
+.container .nav-bar .nav-title img {
+  height: 100px;
+  width: auto;
 }
 @media (max-width: 500px) {
-  .container .nav-bar .nav-title {
-    font-size: 2.5rem;
+  .container .nav-bar .nav-title img {
+    height: 75px;
+    width: auto;
   }
 }
 .container .nav-bar .action-buttons {
@@ -238,7 +235,7 @@ body {
   top: 20%;
   display: flex;
   flex-flow: row;
-  max-width: 65%;
+  max-width: 85%;
   height: 400px;
 }
 @media (max-width: 800px) {
@@ -251,7 +248,7 @@ body {
 }
 @media (max-width: 500px) {
   .container .explain-main {
-    top: 8%;
+    top: 12%;
   }
 }
 .container .explain-joke {
@@ -334,6 +331,11 @@ body {
 .container .explain-follow-title {
   font-size: 3.5rem;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .container .explain-follow-title {
+    font-size: 2.5rem;
+  }
 }
 .container .explain-follow-directions {
   font-size: 1.2rem;
