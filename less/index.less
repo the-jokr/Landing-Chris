@@ -1,9 +1,14 @@
+//VARIABLES
+
+
+
 html,
 body {
-    height          : 100%;
+    height          : auto;
     background-color: white;
     font-family     : Arial, Helvetica, sans-serif;
 }
+
 
 .container {
     max-width: 1500px;
@@ -17,11 +22,11 @@ body {
 
         a {
             text-decoration: none;
-            color          : black;
             margin-top     : 5px;
+            color          : black;
         }
 
-        .main-title {
+        .nav-title {
             font-size: 30px;
         }
 
@@ -33,19 +38,330 @@ body {
                 border       : 1px solid black;
                 border-radius: 4px;
                 padding      : 10px 35px;
+                color        : black;
             }
 
-            .nav-sign-up{
-                border       : 1px solid black;
-                border-radius: 4px;
-                padding      : 10px 35px;
-                color: white;
+            .nav-sign-up {
+                border          : 1px solid black;
+                border-radius   : 4px;
+                padding         : 10px 35px;
+                color           : white;
                 background-color: black;
             }
 
         }
 
 
+    }
+
+
+    .top {
+        display        : flex;
+        justify-content: center;
+        text-align     : center;
+
+        &-main {
+            position : absolute;
+            top      : 35%;
+            display  : flex;
+            flex-flow: column;
+
+            div:nth-child(1) {
+                font-size: 4rem;
+            }
+
+            div:nth-child(2),
+            div:nth-child(3) {
+                font-size: 1.3rem;
+            }
+
+            a {
+                text-decoration: none;
+                margin-top     : 10px;
+                color          : black;
+            }
+
+            .main-sign-up {
+                border          : 1px solid black;
+                border-radius   : 4px;
+                padding         : 10px 35px;
+                color           : white;
+                background-color: black;
+            }
+
+            .main-log-in {
+                border       : 1px solid black;
+                border-radius: 4px;
+                padding      : 10px 35px;
+                color        : black;
+            }
+
+            .main-trending {
+                padding-top: 10px;
+            }
+
+        }
+    }
+
+    .intro {
+        display        : flex;
+        justify-content: center;
+        text-align     : center;
+
+        &-main {
+            position : absolute;
+            top      : 35%;
+            display  : flex;
+            flex-flow: column;
+            max-width: 30%;
+
+            div:nth-child(1) {
+                font-size: 4rem;
+            }
+
+            div:nth-child(2) {
+                font-size : 2rem;
+                margin-top: 20px;
+            }
+
+            p {
+                line-height: 25px;
+            }
+
+        }
+    }
+
+    .showcase {
+        display        : flex;
+        justify-content: center;
+
+        &-main {
+            position : absolute;
+            top      : 15%;
+            display  : flex;
+            flex-flow: column;
+            max-width: 80%;
+        }
+
+        &-top {
+            div:nth-child(1) {
+
+                font-size: 2.5rem;
+
+            }
+
+            p {
+                max-width  : 40%;
+                line-height: 20px;
+            }
+        }
+
+        &-bottom {
+            display  : flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+
+            &-joke {
+                display        : flex;
+                flex-flow      : column;
+                width          : 300px;
+                height         : 200px;
+                border         : 1px solid black;
+                border-radius  : 4px;
+                justify-content: space-between;
+                margin         : 10px;
+
+                img {
+                    padding      : 10px;
+                    border-radius: 4px;
+                }
+
+                &-title {
+                    margin    : 10px;
+                    align-self: center;
+                    font-size : 1.5rem;
+                }
+
+                &-lower {
+                    display  : flex;
+                    flex-flow: column;
+
+                    div:nth-child(1) {
+                        margin-left: 10px
+                    }
+
+                    div:nth-child(2) {
+                        display        : flex;
+                        justify-content: space-between;
+                        margin         : 5px 10px 5px 10px;
+
+                        a {
+                            color: black;
+                        }
+                    }
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .explain {
+        display        : flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color          : black;
+        }
+
+        &-main {
+            position : absolute;
+            top      : 20%;
+            display  : flex;
+            flex-flow: row;
+            max-width: 65%;
+            height   : 400px;
+        }
+
+        &-joke {
+            display        : flex;
+            flex-flow      : column;
+            width          : 50%;
+            height         : 85%;
+            border         : 1px solid black;
+            border-radius  : 4px;
+            justify-content: space-between;
+            padding        : 15px;
+            margin         : 20px;
+
+            img {
+                padding      : 10px;
+                border-radius: 4px;
+            }
+
+            &-top {
+                display        : flex;
+                flex-flow      : row;
+                justify-content: space-between;
+
+                .follow-btn {
+                    border       : 1px solid black;
+                    border-radius: 4px;
+                    padding      : 10px 45px;
+                    color        : black;
+                }
+
+                .follow {
+                    padding-top: 10px;
+                }
+
+                &-user {
+                    display: flex;
+
+                    p {
+                        width: 70%;
+                    }
+
+                }
+
+            }
+
+            &-title {
+                font-size : 3.5rem;
+                text-align: center;
+            }
+
+            &-punch-line {
+                font-size : 2rem;
+                text-align: center;
+            }
+
+            &-low {
+                display        : flex;
+                justify-content: space-between;
+            }
+
+        }
+
+        &-follow {
+            display        : flex;
+            flex-flow      : column;
+            width          : 50%;
+            justify-content: space-evenly;
+            padding        : 15px;
+            margin         : 20px;
+
+            &-title {
+                font-size: 3.5rem;
+                width    : 90%;
+            }
+
+            &-directions {
+                font-size: 1.2rem;
+            }
+
+        }
+
+    }
+
+    .bottom {
+
+        display        : flex;
+        justify-content: center;
+        text-align     : center;
+
+        &-main {
+            position : absolute;
+            top      : 35%;
+            display  : flex;
+            flex-flow: column;
+
+            div:nth-child(1) {
+                font-size: 4rem;
+                width    : 99%;
+            }
+
+            div:nth-child(2) {
+                font-size: 1.3rem;
+                padding: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                margin: 5px auto;
+            }
+
+            &-sign-up {
+                border          : 1px solid black;
+                border-radius   : 4px;
+                padding         : 10px 35px;
+                color           : white;
+                background-color: black;
+                width           : 20%;
+            }
+
+            &-log-in {
+                border       : 1px solid black;
+                border-radius: 4px;
+                padding      : 10px 35px;
+                color        : black;
+                width        : 20%;
+            }
+
+            &-trending {
+                padding-top: 10px;
+                color: black;
+            }
+        }
+
+    }
+
+    .hidden {
+        display: none;
     }
 
 }
