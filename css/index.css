@@ -19,10 +19,20 @@ body {
   color: black;
 }
 .container .nav-bar .nav-title {
-  font-size: 30px;
+  font-size: 2.5rem;
+}
+@media (max-width: 800px) {
+  .container .nav-bar .nav-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .nav-bar .nav-title {
+    font-size: 2.5rem;
+  }
 }
 .container .nav-bar .action-buttons {
-  margin-top: 15px;
+  margin-top: 17px;
 }
 .container .nav-bar .action-buttons .nav-log-in {
   border: 1px solid black;
@@ -30,12 +40,22 @@ body {
   padding: 10px 35px;
   color: black;
 }
+@media (max-width: 500px) {
+  .container .nav-bar .action-buttons .nav-log-in {
+    padding: 5px 25px;
+  }
+}
 .container .nav-bar .action-buttons .nav-sign-up {
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px 35px;
   color: white;
   background-color: black;
+}
+@media (max-width: 500px) {
+  .container .nav-bar .action-buttons .nav-sign-up {
+    padding: 5px 25px;
+  }
 }
 .container .top {
   display: flex;
@@ -83,10 +103,21 @@ body {
 }
 .container .intro-main {
   position: absolute;
-  top: 35%;
+  top: 30%;
   display: flex;
   flex-flow: column;
   max-width: 30%;
+}
+@media (max-width: 800px) {
+  .container .intro-main {
+    max-width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .container .intro-main {
+    top: 25%;
+    max-width: 85%;
+  }
 }
 .container .intro-main div:nth-child(1) {
   font-size: 4rem;
@@ -97,6 +128,17 @@ body {
 }
 .container .intro-main p {
   line-height: 25px;
+}
+@media (max-width: 800px) {
+  .container .intro-main p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .intro-main p {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
 }
 .container .showcase {
   display: flex;
@@ -116,10 +158,22 @@ body {
   max-width: 40%;
   line-height: 20px;
 }
+@media (max-width: 800px) {
+  .container .showcase-top p {
+    max-width: 100%;
+    line-height: 27px;
+    font-size: 1.3rem;
+  }
+}
 .container .showcase-bottom {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .container .showcase-bottom {
+    justify-content: center;
+  }
 }
 .container .showcase-bottom-joke {
   display: flex;
@@ -131,6 +185,12 @@ body {
   justify-content: space-between;
   margin: 10px;
 }
+@media (max-width: 800px) {
+  .container .showcase-bottom-joke {
+    width: 80%;
+    height: 300px;
+  }
+}
 .container .showcase-bottom-joke img {
   padding: 10px;
   border-radius: 4px;
@@ -139,6 +199,11 @@ body {
   margin: 10px;
   align-self: center;
   font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .container .showcase-bottom-joke-title {
+    font-size: 3rem;
+  }
 }
 .container .showcase-bottom-joke-lower {
   display: flex;
@@ -154,6 +219,11 @@ body {
 }
 .container .showcase-bottom-joke-lower div:nth-child(2) a {
   color: black;
+}
+@media (max-width: 800px) {
+  .container .showcase-bottom-joke-lower div:nth-child(2) a {
+    font-size: 1.5rem;
+  }
 }
 .container .explain {
   display: flex;
@@ -171,6 +241,19 @@ body {
   max-width: 65%;
   height: 400px;
 }
+@media (max-width: 800px) {
+  .container .explain-main {
+    flex-flow: column-reverse;
+    height: auto;
+    top: 15%;
+    max-width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .container .explain-main {
+    top: 8%;
+  }
+}
 .container .explain-joke {
   display: flex;
   flex-flow: column;
@@ -181,6 +264,17 @@ body {
   justify-content: space-between;
   padding: 15px;
   margin: 20px;
+}
+@media (max-width: 800px) {
+  .container .explain-joke {
+    width: 90%;
+    height: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .container .explain-joke {
+    margin: 0px;
+  }
 }
 .container .explain-joke img {
   padding: 10px;
@@ -226,12 +320,28 @@ body {
   padding: 15px;
   margin: 20px;
 }
+@media (max-width: 800px) {
+  .container .explain-follow {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .container .explain-follow {
+    margin: 0px;
+    font-size: 1.3rem;
+  }
+}
 .container .explain-follow-title {
   font-size: 3.5rem;
   width: 90%;
 }
 .container .explain-follow-directions {
   font-size: 1.2rem;
+}
+@media (max-width: 800px) {
+  .container .explain-follow-directions {
+    font-size: 1.4rem;
+  }
 }
 .container .bottom {
   display: flex;
