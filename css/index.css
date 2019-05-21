@@ -65,16 +65,17 @@ body {
   display: flex;
   flex-flow: column;
 }
-.container .top-main div:nth-child(1) {
-  font-size: 4rem;
+.container .top-main div:nth-child(1) img {
+  width: 70%;
 }
 .container .top-main div:nth-child(2),
 .container .top-main div:nth-child(3) {
   font-size: 1.3rem;
+  padding-top: 5px;
 }
 .container .top-main a {
   text-decoration: none;
-  margin-top: 10px;
+  margin: 5px auto;
   color: black;
 }
 .container .top-main .main-sign-up {
@@ -83,12 +84,14 @@ body {
   padding: 10px 35px;
   color: white;
   background-color: black;
+  width: 20%;
 }
 .container .top-main .main-log-in {
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px 35px;
   color: black;
+  width: 20%;
 }
 .container .top-main .main-trending {
   padding-top: 10px;
@@ -104,6 +107,9 @@ body {
   display: flex;
   flex-flow: column;
   max-width: 30%;
+}
+.container .intro-main img {
+  width: 100%;
 }
 @media (max-width: 800px) {
   .container .intro-main {
@@ -186,6 +192,11 @@ body {
   .container .showcase-bottom-joke {
     width: 80%;
     height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .container .showcase-bottom-joke {
+    height: 225px;
   }
 }
 .container .showcase-bottom-joke img {

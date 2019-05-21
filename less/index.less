@@ -84,17 +84,20 @@ body {
             flex-flow: column;
 
             div:nth-child(1) {
-                font-size: 4rem;
+                img{
+                    width: 70%;
+                }
             }
 
             div:nth-child(2),
             div:nth-child(3) {
                 font-size: 1.3rem;
+                padding-top: 5px;
             }
 
             a {
                 text-decoration: none;
-                margin-top     : 10px;
+                margin    : 5px auto;
                 color          : black;
             }
 
@@ -104,6 +107,7 @@ body {
                 padding         : 10px 35px;
                 color           : white;
                 background-color: black;
+                width: 20%;
             }
 
             .main-log-in {
@@ -111,6 +115,7 @@ body {
                 border-radius: 4px;
                 padding      : 10px 35px;
                 color        : black;
+                width: 20%;
             }
 
             .main-trending {
@@ -131,6 +136,10 @@ body {
             display  : flex;
             flex-flow: column;
             max-width: 30%;
+
+            img{
+                width: 100%;
+            }
 
             @media(max-width: 800px) {
                 max-width: 50%;
@@ -221,6 +230,10 @@ body {
                 @media(max-width:800px) {
                     width : 80%;
                     height: 300px;
+                }
+
+                @media(max-width: 500px){
+                    height: 225px;
                 }
 
                 img {
