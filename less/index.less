@@ -7,6 +7,12 @@ body {
     height          : auto;
     background-color: white;
     font-family     : Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: center;
 }
 
 .page {
@@ -16,6 +22,10 @@ body {
 .tab {
     margin: auto;
     cursor: pointer;
+    
+    @media(max-width: 500px){
+        display: none;
+    }
 }
 
 .container {
@@ -32,9 +42,14 @@ body {
         top             : 0;
         background-color: white;
 
+        @media(max-width: 800px){
+            width: 99%;
+        }
+        
+        
+
         a {
             text-decoration   : none;
-            // margin-top     : 5px;
             color             : black;
         }
 
@@ -53,13 +68,17 @@ body {
 
 
         .action-buttons {
-            margin: auto;
+            margin: auto 0 auto auto;
 
             .nav-log-in {
                 border       : 1px solid black;
                 border-radius: 4px;
                 padding      : 10px 35px;
                 color        : black;
+
+                @media(max-width: 800px){
+                    padding: 10px 25px;
+                }
 
                 @media(max-width: 500px) {
                     padding: 5px 25px;
@@ -72,6 +91,10 @@ body {
                 padding         : 10px 35px;
                 color           : white;
                 background-color: black;
+
+                @media(max-width: 800px){
+                    padding: 10px 25px;
+                }
 
                 @media(max-width: 500px) {
                     padding: 5px 25px;
@@ -148,10 +171,6 @@ body {
         max-width      : 600px;
         margin         : 0 auto;
 
-        @media(max-width: 800px) {
-            max-width: 50%;
-            left     : 25%;
-        }
 
         @media(max-width: 500px) {
             top      : 45%;
@@ -203,11 +222,19 @@ body {
         margin         : 50px auto;
         justify-content: center;
 
+        @media(max-width: 800px) {
+            height: auto;
+        }
+
         &-top {
             div:nth-child(1) {
 
                 font-size  : 2.5rem;
                 margin-left: 130px;
+
+                @media(max-width: 800px) {
+                    margin: auto;
+                }
 
             }
 
@@ -217,6 +244,7 @@ body {
                 margin-left: 130px;
 
                 @media(max-width: 800px) {
+                    margin     : auto;
                     max-width  : 100%;
                     line-height: 27px;
                     font-size  : 1.3rem;
@@ -265,6 +293,10 @@ body {
 
                     @media(max-width: 800px) {
                         font-size: 3rem;
+                    }
+
+                    @media(max-width: 500px){
+                        font-size: 1.5rem;
                     }
                 }
 
