@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/index.js" async></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -14,240 +17,250 @@
 
 <body>
 
+
     <div class="container">
         <header>
             <nav class="nav-bar">
                 <a class="nav-title" href="#"><img src="assets/DadJokesLogo.png" alt=""></a>
+                <div class="tab" href="">Intro</div>
+                <div class="tab" href="">Demos</div>
+                <div class="tab" href="">How does it work?</div>
+                <div class="tab" href="">Get started</div>
                 <div class="action-buttons">
                     <a class="nav-log-in" href="#">Log In</a>
                     <a class="nav-sign-up" href="#">Sign Up</a>
                 </div>
             </nav>
         </header>
-        <div class="main">
-            <div class="top hidden">
-                <div class="top-main">
-                    <div><img src="assets/DadJokeText.png" alt=""></div>
-                    <div>Come for the Jokes.</div>
-                    <div>Stay for the laughter.</div>
-                    <a class="main-sign-up" href="#">Get Started</a>
-                    <a class="main-log-in" href="#">Log In</a>
-                    <a href="#" class="main-trending"> <i class="fas fa-fire"></i> Here's what's trending</a>
+        <div class="pages">
+            <button class="next-page hidden">next</button>
+
+            <div class="top page" data-tab="1">
+                <!-- <div><img src="assets/DadJokeText.png" alt=""></div> -->
+                <div>
+                    <img src="assets/DadText.png" alt="">
+                    <img src="assets/DadFaceLogo.png" alt="">
+                    <img src="assets/JokesText.png" alt="">
                 </div>
-            </div>
-
-            <div class="intro hidden">
-                <div class="intro-main">
-                    <div><img src="assets/DadJokeText.png" alt=""></div>
-                    <div>Dad Jokes is so easy to use that it's hard to explain.</div>
-                    <p>We made it really, really simple for people to make a joke and showcase is. You can make a joke
-                        about almost anything - personal stories, TV shows, music, fashion, art, ANYTHING - you think
-                        it's funny? Post it! Dad Jokes is a community filled with Jokes enthusiasts.</p>
-                </div>
-            </div>
-
-            <div class="showcase hidden">
-                <div class="showcase-main">
-                    <div class="showcase-top">
-                        <div>Dad Jokes are Hilarious.</div>
-                        <p>
-                            Turns out that when you make it easy to create jokes, that's exactly what people do. All
-                            those
-                            great, corny jokes your friends send you, those are Dad Jokes. We'll help you find and
-                            follow
-                            jokes like that, and we'll help other people find and follow yours.
-                        </p>
-
-                    </div>
-                    <div class="showcase-bottom">
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar1.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar2.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar3.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar4.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar5.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar6.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar7.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="showcase-bottom-joke">
-                            <img src="assets/avatars/Avatar8.png" alt="" height="40" width="40">
-                            <div class="showcase-bottom-joke-title">Joke</div>
-                            <div class="showcase-bottom-joke-lower">
-                                <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
-                                <div class="showcase-bottom-joke-date-actions">
-                                    March 31
-                                    <div class="">
-                                        <a href=""><i class="fas fa-star"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                        <a href=""><i class="fas fa-thumbs-down"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
+                <div>Come for the Jokes.</div>
+                <div>Stay for the laughter.</div>
+                <a class="top-sign-up" href="#">Get Started</a>
+                <a class="top-log-in" href="#">Log In</a>
+                <a href="#" class="top-trending"> <i class="fas fa-fire"></i> Here's what's trending</a>
 
             </div>
 
-            <div class="explain ">
-                <div class="explain-main">
-                    <div class="explain-joke">
-                        <div class="explain-joke-top">
-                            <div class="explain-joke-top-user">
-                                <img src="assets/avatars/Avatar10.png" alt="" height="40" width="40">
-                                <p>
-                                    Created by John Doe
-                                    March 31
-                                </p>
+            <div class="intro page" data-tab="2">
+                <!-- <div><img src="assets/DadJokeText.png" alt=""></div> -->
+                <div>
+                    <img src="assets/DadText.png" alt="">
+                    <img src="assets/DadFaceLogo.png" alt="">
+                    <img src="assets/JokesText.png" alt="">
+                </div>
+                <div>Dad Jokes is so easy to use that it's hard to explain.</div>
+                <p>We made it really, really simple for people to make a joke and showcase is. You can make a joke
+                    about almost anything - personal stories, TV shows, music, fashion, art, ANYTHING - you think
+                    it's funny? Post it! Dad Jokes is a community filled with Jokes enthusiasts.</p>
+            </div>
+
+            <div class="showcase page" data-tab="3">
+                <div class="showcase-top">
+                    <div>Dad Jokes are Hilarious.</div>
+                    <p>
+                        Turns out that when you make it easy to create jokes, that's exactly what people do. All
+                        those
+                        great, corny jokes your friends send you, those are Dad Jokes. We'll help you find and
+                        follow
+                        jokes like that, and we'll help other people find and follow yours.
+                    </p>
+
+                </div>
+                <div class="showcase-bottom">
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar1.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
                             </div>
-                            <div class="follow">
-                                <a class="follow-btn" href="#">Follow</a>
-                            </div>
-                        </div>
-                        <div class="explain-joke-title">Joke Joke Joke</div>
-                        <div class="explain-joke-punch-line">Punch Line Punch Line Punch Line Punch Line Punch Line
-                            Punch Line </div>
-                        <div class="explain-joke-low">268 Reactions
-                            <div class="">
-                                <a href=""><i class="fas fa-star"></i></a>
-                                <a href=""><i class="fas fa-thumbs-up"></i></a>
-                                <a href=""><i class="fas fa-thumbs-down"></i></a>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="explain-follow">
-                        <div class="explain-follow-title"> You already know how this works.</div>
-                        <div class="explain-follow-directions">Once you follow a joker, all of their jokes show up in your dashboard, just like you'd
-                            expext. See something great? Repost it to your own page. Add commentary if you like. Make it
-                            your own. Other people will do the same to your jokes. That's how you meet people here.
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar2.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar3.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar4.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar5.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar6.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar7.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="showcase-bottom-joke">
+                        <img src="assets/avatars/Avatar8.png" alt="" height="40" width="40">
+                        <div class="showcase-bottom-joke-title">Joke</div>
+                        <div class="showcase-bottom-joke-lower">
+                            <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
+                            <div class="showcase-bottom-joke-date-actions">
+                                March 31
+                                <div class="">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-up"></i></a>
+                                    <a href=""><i class="fas fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="explain page" data-tab="4">
+                <div class="explain-joke">
+                    <div class="explain-joke-top">
+                        <div class="explain-joke-top-user">
+                            <img src="assets/avatars/Avatar10.png" alt="" height="40" width="40">
+                            <p>
+                                Created by John Doe
+                                March 31
+                            </p>
+                        </div>
+                        <div class="follow">
+                            <a class="follow-btn" href="#">Follow</a>
+                        </div>
+                    </div>
+                    <div class="explain-joke-title">Joke Joke Joke</div>
+                    <div class="explain-joke-punch-line">Punch Line Punch Line Punch Line Punch Line Punch Line
+                        Punch Line </div>
+                    <div class="explain-joke-low">268 Reactions
+                        <div class="">
+                            <a href=""><i class="fas fa-star"></i></a>
+                            <a href=""><i class="fas fa-thumbs-up"></i></a>
+                            <a href=""><i class="fas fa-thumbs-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="explain-follow">
+                    <div class="explain-follow-title"> You already know how this works.</div>
+                    <div class="explain-follow-directions">Once you follow a joker, all of their jokes show up in
+                        your dashboard, just like you'd
+                        expext. See something great? Repost it to your own page. Add commentary if you like. Make it
+                        your own. Other people will do the same to your jokes. That's how you meet people here.
                     </div>
                 </div>
             </div>
 
-            <div class="bottom hidden">
-                    <div class="bottom-main">
-                        <div>Okay, it's not actually that hard to explain.</div>
-                        <div>We lied. But now you understand this thing. So come on in.</div>
-                        <a class="bottom-main-sign-up" href="#">Get Started</a>
-                        <a class="bottom-main-log-in" href="#">Log In</a>
-                        <a href="#" class="bottom-main-trending"> <i class="fas fa-fire"></i> Here's what's trending</a>
-                    </div>
+            <div class="bottom page" data-tab="5">
+                <div>
+                    <div>Okay, it's not actually that hard to explain.</div>
+                    <div>We lied. But now you understand this thing. So come on in.</div>
+                    <a class="bottom-sign-up" href="#">Get Started</a>
+                    <a class="bottom-log-in" href="#">Log In</a>
+                    <a href="#" class="bottom-trending"> <i class="fas fa-fire"></i> Here's what's trending</a>
                 </div>
+            </div>
 
 
         </div>

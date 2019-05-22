@@ -9,6 +9,14 @@ body {
     font-family     : Arial, Helvetica, sans-serif;
 }
 
+.page {
+    height: 100%;
+}
+
+.tab {
+    margin: auto;
+    cursor: pointer;
+}
 
 .container {
     max-width: 1500px;
@@ -17,13 +25,17 @@ body {
 
 
     .nav-bar {
-        display        : flex;
-        justify-content: space-between;
+        display         : flex;
+        justify-content : space-between;
+        position        : fixed;
+        width           : 90%;
+        top             : 0;
+        background-color: white;
 
         a {
-            text-decoration: none;
-            margin-top     : 5px;
-            color          : black;
+            text-decoration   : none;
+            // margin-top     : 5px;
+            color             : black;
         }
 
         .nav-title {
@@ -32,7 +44,7 @@ body {
                 width : auto;
 
                 @media(max-width: 500px) {
-                    height: 75px;
+                    height: 90px;
                     width : auto;
                 }
             }
@@ -41,7 +53,7 @@ body {
 
 
         .action-buttons {
-            margin-top: 17px;
+            margin: auto;
 
             .nav-log-in {
                 border       : 1px solid black;
@@ -73,132 +85,136 @@ body {
     }
 
     .top {
-        display        : flex;
         justify-content: center;
         text-align     : center;
+        display        : flex;
+        flex-flow      : column;
 
-        &-main {
-            position : absolute;
-            top      : 35%;
-            display  : flex;
-            flex-flow: column;
-
-            div:nth-child(1) {
-                img{
-                    width: 70%;
-                }
+        div:nth-child(1) {
+            img:nth-child(1) {
+                width: 10%;
             }
 
-            div:nth-child(2),
-            div:nth-child(3) {
-                font-size: 1.3rem;
-                padding-top: 5px;
+            img:nth-child(2) {
+                width: 10%;
             }
 
-            a {
-                text-decoration: none;
-                margin    : 5px auto;
-                color          : black;
+            img:nth-child(3) {
+                width: 15%;
             }
-
-            .main-sign-up {
-                border          : 1px solid black;
-                border-radius   : 4px;
-                padding         : 10px 35px;
-                color           : white;
-                background-color: black;
-                width: 20%;
-            }
-
-            .main-log-in {
-                border       : 1px solid black;
-                border-radius: 4px;
-                padding      : 10px 35px;
-                color        : black;
-                width: 20%;
-            }
-
-            .main-trending {
-                padding-top: 10px;
-            }
-
         }
+
+        div:nth-child(2),
+        div:nth-child(3) {
+            font-size  : 1.3rem;
+            padding-top: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            margin         : 5px auto;
+            color          : black;
+        }
+
+        .top-sign-up {
+            border          : 1px solid black;
+            border-radius   : 4px;
+            padding         : 10px 35px;
+            color           : white;
+            background-color: black;
+            width           : 20%;
+        }
+
+        .top-log-in {
+            border       : 1px solid black;
+            border-radius: 4px;
+            padding      : 10px 35px;
+            color        : black;
+            width        : 20%;
+        }
+
+        .top-trending {
+            padding-top: 10px;
+        }
+
     }
 
     .intro {
-        display        : flex;
         justify-content: center;
         text-align     : center;
+        display        : flex;
+        flex-flow      : column;
+        width          : 100%;
+        max-width      : 600px;
+        margin         : 0 auto;
 
-        &-main {
-            position : absolute;
-            top      : 30%;
-            display  : flex;
-            flex-flow: column;
-            max-width: 30%;
+        @media(max-width: 800px) {
+            max-width: 50%;
+            left     : 25%;
+        }
 
-            img{
-                width: 100%;
+        @media(max-width: 500px) {
+            top      : 45%;
+            left     : 10%;
+            max-width: 85%;
+        }
+
+        div:nth-child(1) {
+            width: 100%;
+
+            img:nth-child(1) {
+                width: 25%;
             }
 
+            img:nth-child(2) {
+                width: 30%;
+            }
+
+            img:nth-child(3) {
+                width: 35%;
+            }
+        }
+
+        div:nth-child(2) {
+            font-size : 2rem;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 25px;
+
             @media(max-width: 800px) {
-                max-width: 50%;
+                font-size: 1.2rem;
             }
 
             @media(max-width: 500px) {
-                top      : 25%;
-                max-width: 85%;
-            }
-
-            div:nth-child(1) {
-                font-size: 4rem;
-            }
-
-            div:nth-child(2) {
-                font-size : 2rem;
-                margin-top: 20px;
-            }
-
-            p {
-                line-height: 25px;
-
-                @media(max-width: 800px) {
-                    font-size: 1.2rem;
-                }
-
-                @media(max-width: 500px) {
-                    font-size  : 1.5rem;
-                    line-height: 30px;
-                }
-
+                font-size  : 1.5rem;
+                line-height: 30px;
             }
 
         }
+
     }
 
     .showcase {
         display        : flex;
+        flex-flow      : column;
+        width          : 80%;
+        margin         : 50px auto;
         justify-content: center;
-
-
-        &-main {
-            position : absolute;
-            top      : 15%;
-            display  : flex;
-            flex-flow: column;
-            max-width: 80%;
-        }
 
         &-top {
             div:nth-child(1) {
 
-                font-size: 2.5rem;
+                font-size  : 2.5rem;
+                margin-left: 130px;
 
             }
 
             p {
                 max-width  : 40%;
                 line-height: 20px;
+                margin-left: 130px;
 
                 @media(max-width: 800px) {
                     max-width  : 100%;
@@ -209,9 +225,10 @@ body {
         }
 
         &-bottom {
-            display  : flex;
-            flex-flow: row;
-            flex-wrap: wrap;
+            display        : flex;
+            flex-flow      : row;
+            flex-wrap      : wrap;
+            justify-content: center;
 
             @media(max-width:800px) {
                 justify-content: center;
@@ -232,7 +249,7 @@ body {
                     height: 300px;
                 }
 
-                @media(max-width: 500px){
+                @media(max-width: 500px) {
                     height: 225px;
                 }
 
@@ -284,43 +301,37 @@ body {
 
     .explain {
         display        : flex;
+        flex-flow      : row;
+        max-width      : 85%;
         justify-content: center;
+        margin         : auto;
+
+        @media(max-width: 800px) {
+            flex-flow: column-reverse;
+            height   : auto;
+            top      : 15%;
+            max-width: 85%;
+        }
+
+        @media(max-width:500px) {
+            top: 12%;
+        }
 
         a {
             text-decoration: none;
             color          : black;
         }
 
-        &-main {
-            position : absolute;
-            top      : 20%;
-            display  : flex;
-            flex-flow: row;
-            max-width: 85%;
-            height   : 400px;
-
-            @media(max-width: 800px) {
-                flex-flow: column-reverse;
-                height   : auto;
-                top      : 15%;
-                max-width: 85%;
-            }
-
-            @media(max-width:500px) {
-                top: 12%;
-            }
-        }
-
         &-joke {
             display        : flex;
             flex-flow      : column;
-            width          : 50%;
-            height         : 85%;
+            width          : 45%;
+            height         : 45%;
             border         : 1px solid black;
             border-radius  : 4px;
             justify-content: space-between;
             padding        : 15px;
-            margin         : 20px;
+            margin         : auto;
 
             @media(max-width:800px) {
                 width : 90%;
@@ -383,26 +394,28 @@ body {
         &-follow {
             display        : flex;
             flex-flow      : column;
-            width          : 50%;
+            width          : 45%;
+            height         : 45%;
             justify-content: space-evenly;
             padding        : 15px;
-            margin         : 20px;
+            margin         : auto;
 
             @media(max-width:800px) {
                 width: 90%;
             }
 
             @media(max-width:500px) {
-                margin   : 0px;
-                font-size: 1.3rem;
+                margin-top   : 15px;
+                margin-bottom: 15px;
             }
 
             &-title {
                 font-size: 3.5rem;
                 width    : 90%;
-                @media(max-width: 500px){
+
+                @media(max-width: 500px) {
                     font-size: 2.5rem;
-                    
+
                 }
             }
 
@@ -419,20 +432,26 @@ body {
     }
 
     .bottom {
+        display   : flex;
+        flex-flow : column;
+        text-align: center;
 
-        display        : flex;
-        justify-content: center;
-        text-align     : center;
+        @media(max-width:800px) {
+            left: 0%;
+        }
 
-        &-main {
-            position : absolute;
-            top      : 35%;
+        div:nth-child(1) {
             display  : flex;
             flex-flow: column;
+            margin   : auto;
 
             div:nth-child(1) {
+
                 font-size: 4rem;
-                width    : 99%;
+
+                @media(max-width:500px) {
+                    font-size: 3rem;
+                }
             }
 
             div:nth-child(2) {
@@ -440,38 +459,60 @@ body {
                 padding  : 20px;
             }
 
-            a {
-                text-decoration: none;
-                margin         : 5px auto;
+        }
+
+
+
+        a {
+            text-decoration: none;
+            margin         : 5px auto;
+            width          : 15%;
+
+            @media(max-width: 800px) {
+                width: 30%
             }
 
-            &-sign-up {
-                border          : 1px solid black;
-                border-radius   : 4px;
-                padding         : 10px 35px;
-                color           : white;
-                background-color: black;
-                width           : 20%;
-            }
-
-            &-log-in {
-                border       : 1px solid black;
-                border-radius: 4px;
-                padding      : 10px 35px;
-                color        : black;
-                width        : 20%;
-            }
-
-            &-trending {
-                padding-top: 10px;
-                color      : black;
+            @media(max-width: 500px) {
+                width: 45%;
             }
         }
 
+        &-sign-up {
+            border          : 1px solid black;
+            border-radius   : 4px;
+            padding         : 10px 35px;
+            color           : white;
+            background-color: black;
+        }
+
+        &-log-in {
+            border       : 1px solid black;
+            border-radius: 4px;
+            padding      : 10px 35px;
+            color        : black;
+        }
+
+        &-trending {
+            padding-top: 10px;
+            color      : black;
+        }
     }
 
     .hidden {
         display: none;
     }
 
+}
+
+
+.page-close {
+    height    : 1000px;
+    transform : scale(0, 0);
+    transition: 1s;
+}
+
+
+.page-open {
+    transform : scale(1, 1);
+    transition: 1s;
 }
