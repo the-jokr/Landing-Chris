@@ -1,13 +1,4 @@
 
-class Tabs {
-
-    constructor(tab) {
-        this.tab = tab;
-        console.log(this.tab);
-    };
-
-}
-
 class TabLink {
     constructor(tabLink) {
         this.tabLink = tabLink;
@@ -38,8 +29,5 @@ class TabItem {
     }
 
 }
-
-
-const tabs = new Tabs();
 
 links = document.querySelectorAll('.tabs-link').forEach(link => new TabLink(link));
