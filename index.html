@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="components/Pages/pages.js" async></script>
+    <script src="components/Jokes/jokes.js" async></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -19,18 +19,28 @@
 
     <div class="container">
         <header>
-            <nav class="nav-bar">
+            <div class="nav-bar">
                 <a class="nav-title animated slideInLeft" href="#"><img src="assets/DadJokesLogo.png" alt=""></a>
-                <a class="tab animated slideInLeft" href="#intro" data-tab="2"><i class="fas fa-question"></i></a>
-                <a class="tab animated slideInLeft" href="#showcase" data-tab="3"><i class="fas fa-eye"></i></a>
-                <a class="tab animated slideInLeft" href="#explain" data-tab="4"><i class="fas fa-walking"></i></a>
-                <a class="tab animated slideInLeft" href="#bottom" data-tab="5"><i class="far fa-play-circle"></i></a>
-                <a class="tab animated slideInLeft" href="about.html" data-tab="6"><i class="fas fa-info-circle"></i></a>
                 <div class="action-buttons animated slideInLeft">
                     <a class="nav-log-in" href="#">Log In</a>
                     <a class="nav-sign-up" href="#">Sign Up</a>
                 </div>
-            </nav>
+            </div>
+            <div class="side-menu">
+                <ul>
+                    <li><a class="tab animated slideInLeft" href="#intro" data-tab="2"><i
+                                class="fas fa-question-circle"></i></a></li>
+                    <li><a class="tab animated slideInLeft" href="#showcase" data-tab="3"><i class="fas fa-eye"></i></a>
+                    </li>
+                    <li><a class="tab animated slideInLeft" href="#explain" data-tab="4"><i
+                                class="fas fa-user-circle"></i></a></li>
+                    <li><a class="tab animated slideInLeft" href="#bottom" data-tab="5"><i
+                                class="fas fa-play-circle"></i></a></li>
+                    <li><a class="tab animated slideInLeft" href="about.html" data-tab="6"><i
+                                class="fas fa-info-circle"></i></a></li>
+                </ul>
+
+            </div>
         </header>
         <div class="pages">
 
@@ -78,6 +88,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar1.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">Why can't you play poker on the African Savanna?</div>
+                        <div class="showcase-bottom-joke-punch-line">There's too many cheetahs.</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -95,6 +106,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar2.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">Why is it always hot in the corner of a room?</div>
+                        <div class="showcase-bottom-joke-punch-line">Because a corner is 90 degress.</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -111,7 +123,9 @@
 
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar3.png" alt="" height="40" width="40">
-                        <div class="showcase-bottom-joke-title">I was wondering why the baseball was getting bigger.</div>
+                        <div class="showcase-bottom-joke-title">I was wondering why the baseball was getting bigger.
+                        </div>
+                        <div class="showcase-bottom-joke-punch-line">And then it hit me!</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -129,6 +143,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar4.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">What are the strongest days of the week?</div>
+                        <div class="showcase-bottom-joke-punch-line">Saturday and Sunday, the rest are all week days.</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -146,6 +161,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar5.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">What did the shy pebble wish for?</div>
+                        <div class="showcase-bottom-joke-punch-line">That she was a little boulder.</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -163,6 +179,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar6.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">What did the hat say to the hat rack?</div>
+                        <div class="showcase-bottom-joke-punch-line">You stay here, I'll go on ahead.</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -180,6 +197,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar7.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">What do you call a pencil without lead?</div>
+                        <div class="showcase-bottom-joke-punch-line">Pointless.</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -197,6 +215,7 @@
                     <div class="showcase-bottom-joke">
                         <img src="assets/avatars/Avatar8.png" alt="" height="40" width="40">
                         <div class="showcase-bottom-joke-title">Have you heard about the restaurant on the moon?</div>
+                        <div class="showcase-bottom-joke-punch-line">Great food, but no atmosphere!</div>
                         <div class="showcase-bottom-joke-lower">
                             <div class="showcase-bottom-joke-created-by">Created by John Doe</div>
                             <div class="showcase-bottom-joke-date-actions">
@@ -209,7 +228,7 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
 
 
@@ -243,17 +262,17 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="explain-follow">
                     <div class="explain-follow-title"> You already know how this works.</div>
                     <div class="explain-follow-directions">Once you follow a joker, all of their jokes show up in
                         your dashboard, just like you'd
                         expect. See something great? Repost it to your own page. Add commentary if you like. Make it
-                        your own. Other people will do the same to your jokes. That's how you meet people here. 
-                        
+                        your own. Other people will do the same to your jokes. That's how you meet people here.
+
                     </div>
                 </div>
-                
+
             </div>
             <div><a class="next-button" href="#bottom">Next</a></div>
 

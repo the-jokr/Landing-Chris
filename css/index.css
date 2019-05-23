@@ -12,10 +12,6 @@ header {
 .page {
   height: 100%;
 }
-.tab {
-  margin: auto;
-  cursor: pointer;
-}
 .container {
   max-width: 1500px;
   width: 100%;
@@ -26,8 +22,7 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 90%;
-  top: 0;
-  background-color: white;
+  top: 10px;
   z-index: 1;
 }
 @media (max-width: 800px) {
@@ -311,6 +306,11 @@ header {
     font-size: 1.5rem;
   }
 }
+.showcase-bottom-joke-punch-line {
+  margin: 10px;
+  text-align: center;
+  display: none;
+}
 .showcase-bottom-joke-lower {
   display: flex;
   flex-flow: column;
@@ -484,6 +484,11 @@ header {
 .bottom div:nth-child(1) div:nth-child(1) {
   font-size: 4rem;
 }
+@media (max-width: 800px) {
+  .bottom div:nth-child(1) div:nth-child(1) {
+    margin: 20px;
+  }
+}
 @media (max-width: 500px) {
   .bottom div:nth-child(1) div:nth-child(1) {
     font-size: 3rem;
@@ -537,6 +542,23 @@ header {
   width: 10%;
   font-weight: bold;
   margin: 0 auto 0 auto;
+}
+.joke-open {
+  height: 400px;
+  transform: scale(1, 1);
+  transition: 1s;
+  font-size: 1.3rem;
+}
+.joke-open .showcase-bottom-joke-punch-line {
+  display: block;
+}
+.joke-close {
+  height: 200px;
+  transform: scale(1, 1);
+  transition: 1s;
+}
+.joke-close .showcase-bottom-joke-punch-line {
+  display: none;
 }
 .top-section {
   width: 70%;
@@ -644,7 +666,6 @@ header {
 .tabs .tabs-links {
   display: flex;
   background-color: white;
-  box-shadow: 0px 10px 15px grey;
 }
 .tabs .tabs-link {
   padding: 10px 25px;
@@ -655,6 +676,7 @@ header {
   cursor: pointer;
   text-align: center;
   width: 100%;
+  border-radius: 20px;
 }
 @media (max-width: 800px) {
   .tabs .tabs-link {
@@ -678,4 +700,23 @@ header {
 .tabs .tabs-link-selected:hover {
   background-color: white;
   color: black;
+}
+.tab {
+  color: black;
+}
+.side-menu ul {
+  padding: 0px 10px;
+}
+.side-menu ul li {
+  list-style-type: none;
+  font-size: 1.4rem;
+  padding: 15px 0;
+}
+.side-menu {
+  z-index: 2;
+  position: fixed;
+  top: 280px;
+  left: 20px;
+  width: 0px;
+  height: 100vh;
 }

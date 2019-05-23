@@ -227,6 +227,12 @@
                 }
             }
 
+            &-punch-line{
+                margin    : 10px;
+                text-align: center;
+                display: none;
+            }
+
             &-lower {
                 display  : @display-flex;
                 flex-flow: column;
@@ -417,6 +423,10 @@
         div:nth-child(1) {
 
             font-size: 4rem;
+
+            @media @tablet {
+                margin: 20px;
+            }
 
             @media @phone {
                 font-size: 3rem;
