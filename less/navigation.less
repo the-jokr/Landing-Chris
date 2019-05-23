@@ -1,0 +1,68 @@
+.nav-bar {
+    display         : @display-flex;
+    justify-content : @just-space-between;
+    position        : fixed;
+    width           : 90%;
+    top             : 0;
+    background-color: white;
+    z-index         : 1;
+
+    @media @tablet {
+        width: 99%;
+    }
+
+    a {
+        text-decoration: none;
+        color          : black;
+    }
+
+    .nav-title {
+        img {
+            height: 100px;
+            width : auto;
+
+            @media @phone {
+                height: 90px;
+                width : auto;
+            }
+        }
+
+    }
+
+
+    .action-buttons {
+        margin     : auto 0 auto auto;
+        font-weight: bold;
+
+        .nav-log-in {
+            border-radius: @main-border-radius;
+            padding      : 10px 35px;
+            color        : black;
+
+            @media @tablet {
+                padding: 10px 25px;
+            }
+
+            @media @phone {
+                padding: 5px 25px;
+            }
+        }
+
+        .nav-sign-up {
+            border: 1px solid black;
+            .sign-up-style(@main-border-radius, 10px 35px, white, black);
+
+            @media @tablet {
+                padding: 10px 25px;
+            }
+
+            @media @phone {
+                padding: 5px 25px;
+            }
+
+        }
+
+    }
+
+
+}
