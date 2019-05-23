@@ -1,0 +1,134 @@
+.explain {
+    display        : @display-flex;
+    flex-flow      : row;
+    max-width      : 85%;
+    justify-content: center;
+    margin         : 0 auto -210px auto;
+
+    @media @tablet {
+        flex-flow  : column-reverse;
+        height     : auto;
+        padding-top: 120px;
+        margin     : 0 auto 20px auto;
+    }
+
+    @media @phone {
+        padding-top: 65px;
+    }
+
+    a {
+        text-decoration: none;
+        color          : black;
+    }
+
+    &-joke {
+        display        : @display-flex;
+        flex-flow      : column;
+        width          : 45%;
+        height         : 45%;
+        border-radius  : @main-border-radius;
+        justify-content: @just-space-between;
+        padding        : 15px;
+        margin         : auto;
+        box-shadow     : 0px 10px 15px grey;
+
+        @media @tablet {
+            width : 90%;
+            height: 350px;
+        }
+
+        @media @phone {
+            margin: 0px;
+        }
+
+        img {
+            padding      : 10px;
+            border-radius: @main-border-radius;
+        }
+
+        &-top {
+            display        : @display-flex;
+            flex-flow      : row;
+            justify-content: @just-space-between;
+
+            .follow-btn {
+                border          : 1px solid white;
+                border-radius   : @main-border-radius;
+                padding         : 10px 45px;
+                color           : white;
+                background-color: #0599FD;
+                font-weight     : bold;
+            }
+
+            .follow {
+                padding-top: 10px;
+            }
+
+            &-user {
+                display: @display-flex;
+
+                p {
+                    width: 70%;
+                }
+
+            }
+
+        }
+
+        &-title {
+            font-size : 3.5rem;
+            text-align: center;
+        }
+
+        &-punch-line {
+            font-size : 2rem;
+            text-align: center;
+        }
+
+        &-low {
+            display        : @display-flex;
+            justify-content: @just-space-between;
+        }
+
+    }
+
+    &-follow {
+        display        : @display-flex;
+        flex-flow      : column;
+        width          : 45%;
+        height         : 45%;
+        justify-content: space-evenly;
+        padding        : 15px;
+        margin         : auto;
+
+        @media @tablet {
+            width: 90%;
+        }
+
+        @media @phone {
+            margin-top   : 15px;
+            margin-bottom: 0px;
+        }
+
+        &-title {
+            font-size: 3.5rem;
+            width    : 90%;
+
+            @media @phone {
+                font-size: 2.5rem;
+
+            }
+        }
+
+        &-directions {
+            font-size: 1.2rem;
+
+            @media @tablet {
+                margin   : 20px auto 20px auto;
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+
+}

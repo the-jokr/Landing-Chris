@@ -17,6 +17,18 @@ header {
   width: 100%;
   margin: 0 auto;
 }
+.next-button {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px 35px;
+  color: white;
+  background-color: #01E677;
+  text-decoration: none;
+  width: 10%;
+  font-weight: bold;
+  margin: 0 auto 0 auto;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -530,18 +542,6 @@ header {
 .bottom-trending {
   padding-top: 10px;
   color: black;
-}
-.next-button {
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 10px 35px;
-  color: white;
-  background-color: #01E677;
-  text-decoration: none;
-  width: 10%;
-  font-weight: bold;
-  margin: 0 auto 0 auto;
 }
 .joke-open {
   height: 400px;

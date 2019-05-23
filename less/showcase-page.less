@@ -1,0 +1,131 @@
+.showcase {
+    display        : @display-flex;
+    flex-flow      : column;
+    margin         : 50px auto;
+    justify-content: center;
+
+    @media @tablet {
+        height     : auto;
+        width      : 80%;
+        padding-top: 120px;
+    }
+
+    &-top {
+        div:nth-child(1) {
+
+            font-size  : 2.5rem;
+            margin-left: 130px;
+
+            @media @tablet {
+                margin: auto;
+            }
+
+        }
+
+        p {
+            max-width  : 40%;
+            line-height: 20px;
+            margin-left: 130px;
+
+            @media @tablet {
+                margin: 20px auto 20px auto;
+                ;
+                max-width  : 100%;
+                line-height: 27px;
+                font-size  : 1.3rem;
+            }
+        }
+    }
+
+    &-bottom {
+        display        : @display-flex;
+        flex-flow      : row;
+        flex-wrap      : wrap;
+        justify-content: center;
+
+        @media @tablet {
+            justify-content: center;
+        }
+
+        &-joke {
+            display        : @display-flex;
+            flex-flow      : column;
+            width          : 300px;
+            height         : 200px;
+            border-radius  : @main-border-radius;
+            justify-content: @just-space-between;
+            margin         : 10px;
+            box-shadow     : 0px 10px 15px grey;
+
+            @media @tablet {
+                width : 80%;
+                height: 300px;
+            }
+
+            @media @phone {
+                height: 225px;
+            }
+
+            img {
+                padding      : 10px;
+                border-radius: @main-border-radius;
+            }
+
+            &-title {
+                margin    : 10px;
+                align-self: center;
+                font-size : 1.5rem;
+                cursor    : pointer;
+
+                @media @tablet {
+                    font-size: 3rem;
+                }
+
+                @media @phone {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &-punch-line{
+                margin    : 10px;
+                text-align: center;
+                display: none;
+            }
+
+            &-lower {
+                display  : @display-flex;
+                flex-flow: column;
+                font-size: 0.8rem;
+
+                div:nth-child(1) {
+                    margin-left: 10px
+                }
+
+                div:nth-child(2) {
+                    display        : @display-flex;
+                    justify-content: @just-space-between;
+                    margin         : 5px 10px 5px 10px;
+
+                    a {
+                        color: black;
+
+                        @media @tablet {
+                            font-size  : 1.2rem;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+
+    .next-button {
+        .next-button-style(@main-border-radius, 10px 35px, white, #01E677, none, 10%, bold, 10px auto 0 auto);
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,56 @@
+.intro {
+    justify-content: center;
+    text-align     : center;
+    display        : @display-flex;
+    flex-flow      : column;
+    width          : 100%;
+    max-width      : 600px;
+    margin         : 0 auto;
+
+
+    @media @phone {
+        top      : 45%;
+        left     : 10%;
+        max-width: 85%;
+    }
+
+    div:nth-child(1) {
+        width: 100%;
+
+        img:nth-child(1) {
+            width: 25%;
+        }
+
+        img:nth-child(2) {
+            width: 30%;
+        }
+
+        img:nth-child(3) {
+            width: 35%;
+        }
+    }
+
+    div:nth-child(2) {
+        font-size : 1.8rem;
+        margin-top: 20px;
+    }
+
+    p {
+        line-height: 25px;
+
+        @media @tablet {
+            font-size: 1.2rem;
+        }
+
+        @media @phone {
+            font-size  : 1.2rem;
+            line-height: 30px;
+        }
+
+    }
+
+    .next-button {
+        .next-button-style(@main-border-radius, 10px 35px, white, #01E677, none, 15%, bold, 10px auto 0 auto);
+    }
+
+}
