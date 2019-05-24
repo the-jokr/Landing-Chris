@@ -52,7 +52,7 @@ header {
 }
 @media (max-width: 500px) {
   .nav-bar .nav-title img {
-    height: 90px;
+    height: 70px;
     width: auto;
   }
 }
@@ -367,13 +367,13 @@ header {
   .explain {
     flex-flow: column-reverse;
     height: auto;
-    padding-top: 120px;
+    padding-top: 100px;
     margin: 0 auto 20px auto;
   }
 }
 @media (max-width: 500px) {
   .explain {
-    padding-top: 65px;
+    padding-top: 50px;
   }
 }
 .explain a {
@@ -503,12 +503,17 @@ header {
 }
 @media (max-width: 500px) {
   .bottom div:nth-child(1) div:nth-child(1) {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 }
 .bottom div:nth-child(1) div:nth-child(2) {
   font-size: 1.3rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .bottom div:nth-child(1) div:nth-child(2) {
+    font-size: 1.2rem;
+  }
 }
 .bottom a {
   text-decoration: none;
@@ -770,4 +775,9 @@ header {
   left: 5px;
   width: 0px;
   height: 100vh;
+}
+@media (max-width: 500px) {
+  .side-menu a {
+    font-size: 1.1rem;
+  }
 }
